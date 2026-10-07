@@ -20,8 +20,9 @@
     <header class="site-header" data-header>
       <div class="shell nav-shell">
         <a class="brand" href="{{ nav.homepage.url | url }}" aria-label="FreeCampus home">
-          <span class="brand-mark" aria-hidden="true"><span>F</span></span>
-          <span class="brand-name">FreeCampus</span>
+          <svg class="brand-logo" viewBox="0 0 1297 183" width="220" height="31" aria-hidden="true" focusable="false">
+            <use href="{{ 'assets/images/brand.svg' | url }}#logo"></use>
+          </svg>
         </a>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" data-nav-toggle>
@@ -76,9 +77,10 @@
     <footer class="site-footer">
       <div class="shell footer-main">
         <div class="footer-statement">
-          <a class="brand brand-footer" href="{{ nav.homepage.url | url }}">
-            <span class="brand-mark" aria-hidden="true"><span>F</span></span>
-            <span class="brand-name">FreeCampus</span>
+          <a class="brand brand-footer" href="{{ nav.homepage.url | url }}" aria-label="FreeCampus home">
+            <svg class="brand-logo" viewBox="0 0 1297 183" width="220" height="31" aria-hidden="true" focusable="false">
+              <use href="{{ 'assets/images/brand.svg' | url }}#logo"></use>
+            </svg>
           </a>
           <p>Rigorous learning materials,<br>made open to all.</p>
         </div>

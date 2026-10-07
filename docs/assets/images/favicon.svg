@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="32" fill="#173f35"/>
-  <path d="M22 17h24v7H30v8h13v7H30v13h-8V17Z" fill="#f4f2eb"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" color="#f5f3ed" fill="currentColor" role="img">
+  <title>FreeCampus</title>
+<rect width="64" height="64" rx="16" fill="#173f35"/><g transform="translate(6.1 16.1) scale(.175)"><path d="M24 12C12 8 0 17 0 31V126C0 136 4 141 13 144L119 179C127 182 132 178 132 170V63C132 51 128 47 119 44Z" />
+<path d="M183 39C183 33 186 29 192 27L271 1C284-3 296 5 296 20V123C296 134 293 139 282 143L165 180C157 183 152 178 152 170V118Q152 115 155 114L168 109.6667Q170 109 170 107V91Q170 88 167 89L155 93Q152 94 152 91V76Q152 73 155 72L180 63.6667Q183 62.6667 183 59.6667Z" /></g>
 </svg>
-

@@ -19,7 +19,9 @@ description: FreeCampus is a global community creating rigorous, open learning m
       <div class="orbital orbital-one"></div>
       <div class="orbital orbital-two"></div>
       <div class="hero-seal">
-        <span class="seal-monogram">FC</span>
+        <svg class="seal-logo" viewBox="0 0 296 182" width="132" height="81" focusable="false">
+          <use href="assets/images/brand.svg#symbol"></use>
+        </svg>
         <span class="seal-rule"></span>
         <span class="seal-year">OPEN · 2026</span>
       </div>

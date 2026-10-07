@@ -36,6 +36,29 @@ jobs:
         makim pages.build
         echo "freecampus.org" > build/CNAME
 
+    - name: Check generated brand assets
+      run: |
+        python scripts/generate_brand_assets.py
+        git diff --exit-code -- docs/assets/images
+
+    - name: Check responsive branding
+      run: |
+        npm install --no-save --package-lock=false playwright@1.62.1
+        npx playwright install --with-deps chromium
+        python -m http.server 8000 --bind 127.0.0.1 --directory build &
+        PREVIEW_PID=$!
+        trap 'kill "$PREVIEW_PID"' EXIT
+        node tests/brand-responsive.cjs
+
+    - name: Save responsive screenshots
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: responsive-brand-previews
+        path: test-results/
+        if-no-files-found: ignore
+        retention-days: 14
+
     # Push the website's HTML to github-pages
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.5.9
